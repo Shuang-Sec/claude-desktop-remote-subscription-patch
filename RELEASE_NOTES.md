@@ -26,7 +26,9 @@ sharing or region evasion.
 - Fable 5.2 1M menu metadata (verified with a new Desktop session; existing
   sessions may keep the old 200k context until recreated).
 - Optional remote subscription usage panel.
-- Unit tests and detailed Chinese documentation.
+- Redacted usage-panel screenshots: quota values retained; chat, server,
+  account, environment, and context areas pixelated or removed.
+- Unit tests and detailed Chinese/English documentation.
 
 ## Not included
 

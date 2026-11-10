@@ -11,6 +11,22 @@
 Times are displayed in Asia/Shanghai; other users can change the Intl formatter
 in `scripts/oracle-usage-ui.mjs`.
 
+## Screenshots
+
+> **Quota is read from the Claude Code subscription on the remote VPS. The
+> Windows copy only displays it and never stores the token.**
+
+![Remote subscription usage panel](images/usage-panel.png)
+
+*Quota percentages and reset times are from the remote VPS query. Chat,
+session, server, environment, and context information are redacted; quota
+numbers remain visible.*
+
+![Usage panel in the Desktop copy](images/usage-panel-in-app.png)
+
+*The full-window image is only for location context; everything outside the
+quota panel is redacted.*
+
 ## Data path
 
 ```text

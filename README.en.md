@@ -350,6 +350,20 @@ The optional panel shows:
 - extra-usage enabled flag;
 - a refresh button and a five-minute auto-refresh while open.
 
+> **Quota is read from the Claude Code subscription on the remote VPS. The
+> Windows copy only displays it and never stores the subscription token.**
+
+![Remote subscription usage panel](docs/images/usage-panel.png)
+
+*Quota percentages and reset times come from the remote VPS subscription query.
+Chat, session, server, environment, and context areas are redacted; quota
+numbers remain visible.*
+
+![Usage panel in the Desktop copy](docs/images/usage-panel-in-app.png)
+
+*The full-window image is only for location context; everything outside the
+quota panel is redacted.*
+
 The query runs over SSH on the server, reads the server's
 `~/.claude/.credentials.json`, and returns only whitelisted usage fields. No
 token is sent to Windows. The endpoint is internal and may change.

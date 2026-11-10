@@ -8,6 +8,8 @@ workspace/
 config.json
 *.log
 *.png
+!docs/images/
+!docs/images/*.png
 *.jpg
 *.jpeg
 *.lnk

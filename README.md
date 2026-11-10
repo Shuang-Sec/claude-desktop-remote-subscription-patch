@@ -316,6 +316,16 @@ ls ~/.claude/remote/ccd-cli/
 - 刷新按钮；
 - 查询经 SSH 在服务器上执行，凭据不离开服务器。
 
+> **额度从远端 VPS 上的 Claude Code 订阅读取；Windows 副本只负责显示，不保存订阅 token。**
+
+![远端订阅用量面板](docs/images/usage-panel.png)
+
+*额度百分比和重置时间来自远端 VPS 的订阅查询；截图中的聊天、会话、服务器、环境和上下文信息已打码，额度数字保留。*
+
+![用量面板在 Desktop 中的位置](docs/images/usage-panel-in-app.png)
+
+*桌面整体截图只用于说明面板位置；除额度面板外，聊天、会话、服务器、环境、账号和上下文区域均已打码。*
+
 该功能依赖服务器上的 `~/.claude/.credentials.json`（Claude Code 登录状态）和官方用量接口。接口变化时可能失效；失败时显示原因，不会把旧额度冒充成新结果。
 
 详见 [`docs/USAGE-PANEL.md`](docs/USAGE-PANEL.md)。
