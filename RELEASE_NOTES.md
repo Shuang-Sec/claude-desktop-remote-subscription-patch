@@ -4,6 +4,20 @@ This is the first public release of the unofficial compatibility patch for
 using a remote Claude Code subscription with a separate Claude Desktop copy on
 Windows.
 
+## Motivation
+
+The stock Desktop SSH path uses the Desktop's own client authentication/3P
+provider configuration. It does not automatically delegate an existing Claude
+Code subscription on a remote VPS. When the Windows host cannot complete an
+official login because of its network/region, the stock SSH path cannot provide
+the intended "Windows UI + remote subscription" workflow.
+
+Keeping the subscription login on a VPS also gives a fixed public IP, fixed
+region, stable DNS/TLS egress, and 24/7 availability. That can reduce
+environment-change triggers, but it does not guarantee account safety; users
+must comply with Anthropic's terms and must not use the project for account
+sharing or region evasion.
+
 ## Included
 
 - Patch/build scripts for Claude Desktop 4.4212.0 (BYO official installation).

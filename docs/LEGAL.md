@@ -6,6 +6,14 @@ This project is not affiliated with, endorsed by, or supported by Anthropic.
 Claude, Claude Code, Claude Desktop, and related marks are trademarks of their
 owners.
 
+## No evasion or account sharing
+
+The project does not provide account sharing, proxy rotation, multi-account
+management, or a way to evade region/payment requirements. A stable VPS
+environment can reduce environment-change triggers, but it does not guarantee
+that an account will not be limited or suspended. Users are responsible for
+complying with the terms that apply to their account.
+
 ## No proprietary files
 
 The repository does not contain Anthropic binaries, `app.asar`,

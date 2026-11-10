@@ -5,6 +5,14 @@
 No. It is an unofficial compatibility patch. It is not affiliated with,
 endorsed by, or supported by Anthropic.
 
+## 官方 Desktop 不是有 SSH 远程吗？为什么还需要补丁？
+
+官方 Desktop 的 SSH 会话使用的是 Desktop 自己的客户端认证/3P provider 配置。它不会自动把远端 VPS 上已有的 Claude Code 订阅当作本机 Desktop 的认证来源；3P 路径还会把本机 provider 凭据带过去并拒绝 localhost 网关。因此在“Windows 没有官方登录条件、VPS 已有订阅”的组合下，官方原版没有可直接使用的路径，SSH 入口存在也不等于能用远端订阅。
+
+## 把订阅放在 VPS 能降低封号概率吗？
+
+稳定的 VPS 公网 IP、固定地区、稳定出口和 24/7 在线，可以减少因 Windows 本机 IP/网络/登录环境频繁变化导致的额外验证和异常触发，从而降低误封/风控概率；但这**不能保证不封号**。账号安全取决于是否遵守 Anthropic 条款、是否共享账号、使用行为等。本项目不提供账号共享、多账号轮换或地区规避。
+
 ## Does it include Claude Desktop or a modified exe?
 
 No. The repository contains only our own scripts and documentation. It does not

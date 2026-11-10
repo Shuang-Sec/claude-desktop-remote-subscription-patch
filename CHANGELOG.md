@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Documentation: explain why the stock Desktop SSH path does not delegate a
+  remote VPS subscription, and why a fixed VPS authentication environment is
+  used (with explicit no-guarantee/compliance caveats).
+
 ## 0.1.0 — 2026-11-10
 
 Initial public release.

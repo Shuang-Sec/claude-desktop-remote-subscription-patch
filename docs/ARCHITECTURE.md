@@ -1,5 +1,19 @@
 # Architecture
 
+## Why a remote VPS
+
+The stock Desktop SSH path is tied to the Desktop's own client authentication /
+3P provider configuration. It is not a delegation channel for a subscription
+that already exists on another machine. This becomes a practical blocker when
+the Windows host cannot complete an official login (network/region) but the VPS
+already has a working Claude Code subscription.
+
+Putting the subscription login on a VPS also makes the authentication
+environment more stable: fixed public IP, fixed region, stable DNS/TLS egress,
+and 24/7 availability. That reduces environment-change triggers, but it does
+not guarantee account safety; users must comply with Anthropic's terms and must
+not use the project for account sharing or region evasion.
+
 ## Components
 
 ```text
