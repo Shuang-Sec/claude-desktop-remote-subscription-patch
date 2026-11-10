@@ -1,0 +1,20 @@
+[
+  {
+    "name": "default",
+    "labelOverride": "Default (recommended)"
+  },
+  {
+    "name": "claude-opus-5-5",
+    "labelOverride": "Opus 5.5"
+  },
+  {
+    "name": "claude-fable-5-2",
+    "labelOverride": "Fable 5.2",
+    "supports1m": true,
+    "prefer1m": true
+  },
+  {
+    "name": "claude-haiku-5-5",
+    "labelOverride": "Haiku 5.5"
+  }
+]

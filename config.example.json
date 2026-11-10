@@ -1,0 +1,17 @@
+{
+  "officialApp": "C:/Program Files/WindowsApps/AnthropicPBC.Claude_<version>_x64__<publisher>/app",
+  "officialProfile": "C:/Users/<you>/AppData/Local/Claude-3p",
+  "trialRoot": "./trial",
+  "version": "4.4212.0",
+  "modelCatalogFile": "./trial/remote-models.json",
+  "ssh": {
+    "alias": "claude-remote",
+    "user": "ubuntu",
+    "host": "YOUR_SERVER_HOST",
+    "port": 22,
+    "identityFile": "C:/Users/<you>/.ssh/id_ed25519",
+    "remoteCwd": "/home/ubuntu/project",
+    "testCwd": "/home/ubuntu/claude-remote-test"
+  },
+  "usagePanel": true
+}

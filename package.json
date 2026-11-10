@@ -1,0 +1,16 @@
+{
+  "name": "claude-desktop-remote-subscription-patch",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Unofficial compatibility patch for using a remote Claude Code subscription with a separate Claude Desktop copy on Windows.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/unit/config.test.mjs tests/unit/policy.test.mjs tests/unit/model-menu.test.mjs tests/unit/usage.test.mjs",
+    "test:integration": "node --test tests/integration/integration.test.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "dependencies": {
+    "@electron/asar": "4.3.1"
+  }
+}

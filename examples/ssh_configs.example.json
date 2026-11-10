@@ -1,0 +1,13 @@
+{
+  "configs": [
+    {
+      "id": "remote-subscription",
+      "name": "Remote subscription",
+      "sshHost": "YOUR_SSH_USER@YOUR_SERVER_HOST",
+      "sshPort": 22,
+      "sshIdentityFile": "C:/Users/<you>/.ssh/id_ed25519",
+      "remoteCwd": "/home/ubuntu/project"
+    }
+  ],
+  "trustedHosts": ["YOUR_SERVER_HOST", "YOUR_SSH_USER@YOUR_SERVER_HOST"]
+}

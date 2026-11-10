@@ -1,0 +1,20 @@
+# NOTICE
+
+This repository contains an unofficial compatibility patch for a separately
+installed copy of Anthropic's Claude Desktop. It is not affiliated with,
+endorsed by, or supported by Anthropic.
+
+No Anthropic proprietary binaries or source files are included in this
+repository. In particular, the repository does not contain `claude.exe`,
+`app.asar`, `ion-dist.asar`, or extracted contents of those archives.
+
+Users must obtain their own licensed copy of Claude Desktop and use their own
+Claude Code subscription. The build scripts operate on files supplied by the
+user and produce a local, modified copy for that user.
+
+Short code-anchor strings in the patch scripts are necessary for
+interoperability with a specific Claude Desktop version. They are not intended
+to reproduce or redistribute Anthropic source code.
+
+Claude, Claude Code, Claude Desktop, and related marks are trademarks of
+Anthropic. All rights remain with their owners.
