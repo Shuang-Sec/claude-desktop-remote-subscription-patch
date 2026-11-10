@@ -1,5 +1,7 @@
 # Claude Desktop Remote Subscription Patch
 
+**语言 / Language:** [简体中文](README.md) | [English](README.en.md)
+
 > 在 Windows 上使用官方 Claude Desktop 的独立副本，通过 SSH 使用远端 Linux 服务器上已有的 Claude Code 订阅。
 > 本机不登录 Anthropic、不填写官方 API Key、不复制远端订阅令牌。
 >
