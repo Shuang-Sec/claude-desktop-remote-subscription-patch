@@ -18,14 +18,15 @@ in `scripts/oracle-usage-ui.mjs`.
 
 ![Remote subscription usage panel](images/usage-panel.png)
 
-*Quota percentages and reset times are from the remote VPS query. Chat,
-session, server, environment, and context information are redacted; quota
-numbers remain visible.*
+*Quota percentages and reset times are from the remote VPS query. Provider/plan
+labels are replaced, and chat/server content is not included; quota numbers
+remain visible.*
 
 ![Usage panel in the Desktop copy](images/usage-panel-in-app.png)
 
-*The full-window image is only for location context; everything outside the
-quota panel is redacted.*
+*The desktop screenshot is only for location context. Chat content, sidebar
+session titles, server fields, and the bottom account name are redacted. The
+right Context panel, bottom model name, and quota panel remain visible.*
 
 ## Data path
 

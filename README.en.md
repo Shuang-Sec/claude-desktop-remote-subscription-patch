@@ -13,8 +13,23 @@
 > You must obtain your own licensed copy of the official Claude Desktop. This
 > project is not affiliated with Anthropic.
 
+## Preview
+
+![Remote subscription usage panel](docs/images/usage-panel.png)
+
+*Quota is read from the Claude Code subscription on the remote VPS. Quota
+percentages and reset times are retained; provider/plan labels are replaced;
+chat and server content are not shown.*
+
+![Usage panel in the Desktop copy](docs/images/usage-panel-in-app.png)
+
+*The desktop screenshot is only for location context; chat content, sidebar
+session titles, server fields, and the bottom account name are redacted. The
+right Context panel, bottom model name, and quota panel remain visible.*
+
 ## Contents
 
+- [Preview](#preview)
 - [The real pain point](#the-real-pain-point)
 - [Why put the subscription on a remote VPS](#why-put-the-subscription-on-a-remote-vps)
 - [What this project is](#what-this-project-is)
@@ -353,16 +368,7 @@ The optional panel shows:
 > **Quota is read from the Claude Code subscription on the remote VPS. The
 > Windows copy only displays it and never stores the subscription token.**
 
-![Remote subscription usage panel](docs/images/usage-panel.png)
-
-*Quota percentages and reset times come from the remote VPS subscription query.
-Chat, session, server, environment, and context areas are redacted; quota
-numbers remain visible.*
-
-![Usage panel in the Desktop copy](docs/images/usage-panel-in-app.png)
-
-*The full-window image is only for location context; everything outside the
-quota panel is redacted.*
+Screenshots: see [Preview](#preview).
 
 The query runs over SSH on the server, reads the server's
 `~/.claude/.credentials.json`, and returns only whitelisted usage fields. No
