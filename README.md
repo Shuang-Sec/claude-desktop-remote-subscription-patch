@@ -219,7 +219,7 @@ pwsh scripts/start-trial.ps1
 | `modelCatalogFile` | 否 | 远端模型目录 JSON，默认 `./trial/remote-models.json` |
 | `providerConfigFile` | 否 | 指定 `configLibrary` 的 provider JSON；默认自动发现 |
 | `ssh.alias` | 否 | 显示用别名，默认 `claude-remote` |
-| `ssh.user` | 是 | SSH 用户，例如 `ubuntu` |
+| `ssh.user` | 是 | SSH 用户，例如 `deploy` |
 | `ssh.host` | 是 | 服务器域名/IP |
 | `ssh.port` | 否 | 默认 22 |
 | `ssh.identityFile` | 是 | Windows 上的私钥路径 |

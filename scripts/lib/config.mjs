@@ -21,7 +21,7 @@ export function validateConfig(raw) {
   const officialProfile = resolveFromRepo(requiredStrings(raw.officialProfile, 'officialProfile'));
   const trialRoot = resolveFromRepo(typeof raw.trialRoot === 'string' && raw.trialRoot.trim() ? raw.trialRoot.trim() : 'trial');
   const host = requiredStrings(ssh.host, 'ssh.host');
-  const user = typeof ssh.user === 'string' && ssh.user.trim() ? ssh.user.trim() : 'ubuntu';
+  const user = typeof ssh.user === 'string' && ssh.user.trim() ? ssh.user.trim() : 'deploy';
   const port = Number(ssh.port ?? 22);
   if (!Number.isInteger(port) || port < 1 || port > 65535) throw new Error('ssh.port 必须是 1-65535 的整数');
   const identityFile = resolveFromRepo(requiredStrings(ssh.identityFile, 'ssh.identityFile'));

@@ -66,12 +66,12 @@ Example:
   "modelCatalogFile": "./trial/remote-models.json",
   "ssh": {
     "alias": "claude-remote",
-    "user": "ubuntu",
+    "user": "deploy",
     "host": "YOUR_SERVER_HOST",
     "port": 22,
     "identityFile": "C:/Users/<you>/.ssh/id_ed25519",
-    "remoteCwd": "/home/ubuntu/project",
-    "testCwd": "/home/ubuntu/claude-remote-test"
+    "remoteCwd": "/home/deploy/project",
+    "testCwd": "/home/deploy/claude-remote-test"
   },
   "usagePanel": true
 }

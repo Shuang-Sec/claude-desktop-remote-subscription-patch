@@ -7,14 +7,14 @@ const sample = {
   officialApp: 'C:/Official/App',
   officialProfile: 'C:/Official/Profile',
   trialRoot: './trial',
-  ssh: {user: 'ubuntu', host: 'example.test', port: 22, identityFile: 'C:/keys/id_ed25519', remoteCwd: '/home/ubuntu/project', testCwd: '/home/ubuntu/test'}
+  ssh: {user: 'deploy', host: 'example.test', port: 22, identityFile: 'C:/keys/id_ed25519', remoteCwd: '/home/deploy/project', testCwd: '/home/deploy/test'}
 };
 
 test('配置会解析相对路径并生成 host 允许列表', () => {
   const config = validateConfig(sample);
   assert.ok(path.isAbsolute(config.trialRoot));
   assert.ok(path.isAbsolute(config.modelCatalogFile));
-  assert.deepEqual(config.ssh.hosts, ['example.test', 'ubuntu@example.test']);
+  assert.deepEqual(config.ssh.hosts, ['example.test', 'deploy@example.test']);
   assert.equal(config.ssh.port, 22);
   assert.equal(config.usagePanel, true);
 });
